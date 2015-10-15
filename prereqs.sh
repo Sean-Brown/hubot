@@ -9,8 +9,7 @@ nvm install 4.1.1
 nvm alias default 4.1.1
 npm install -g hubot yo generator-hubot
 mkdir ~/bot
+git clone https://github.com/kenjindomini/hubot.git ~/bot
 cd ~/bot
 yo hubot
-npm install hubot-slack --save
 sudo wget -O- https://toolbelt.heroku.com/install-ubuntu.sh | sh
-git init
