@@ -14,10 +14,10 @@ Vagrant.configure(2) do |config|
     vb.name = "Hubot"
     vb.cpus = 1
   end
-  
-  # sync the "bot" folder so you can develop locally and test the results on the VM
-  config.vm.synced_folder ".", "/home/vagrant/bot"
 
   config.vm.provision "shell", path: "prereqs.sh", privileged: false
+
+  # sync the "bot" folder so you can develop locally and test the results on the VM
+  config.vm.synced_folder "./scripts", "/home/vagrant/bot/scripts"
 #  config.vm.provision "shell", path: "autoDev.sh", privileged: false
 end
