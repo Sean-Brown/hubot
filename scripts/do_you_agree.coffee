@@ -6,6 +6,6 @@
 
 module.exports = (robot) ->
 	responses = ['not really', 'no', 'ya um no', 'ask me tomorrow', 'can\'t you see I\'m busy!?']
-	robot.hear /[dD]o(n't)? you agree\?/i, (res) ->
+	robot.respond /[dD]o(n't)? you agree\?/, (res) ->
 		res.send res.random responses
 
