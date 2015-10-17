@@ -1,6 +1,18 @@
 # Description:
 #	Listen for "do you agree?" or "don't you agree?" and sends back a random response
 #
+# Dependencies:
+# 	None
+#
+# Configuration:
+# 	None
+#
+# Commands:
+#	hubot do/don't you agree? - replies with a random response
+#
+# Notes:
+# 	Case-insensitive Do/do Don't/don't, requires a question mark at the end
+#
 # Author:
 #	Sean-Brown
 
